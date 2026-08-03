@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "hiyat-prod"
+  },
+  "targets": {
+    "hiyat-prod": {
+      "hosting": {
+        "company": [
+          "anzen-lab"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
