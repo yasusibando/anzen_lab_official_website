@@ -1,47 +1,30 @@
 # あんぜんLAB株式会社 公式ホームページ
 
-## 概要
-
-会社の中心メッセージと、無料の安全学習アプリ「ヒヤットシリーズ」への取り組みを、シンプルに伝える公式サイトの初期版です。
+ロゴを基準に全面リニューアルした、静的HTML/CSS/JavaScriptの会社公式サイトです。
 
 ## 中心メッセージ
 
-> 事故が起きる前に、安全な行動を選べる人を増やす。
->
-> あんぜんLAB株式会社は、身近な危険に気づき、立ち止まり、適切な行動を選択するための「意識のトレーニング」を届けます。
+事故が起きる前に、安全な行動を選べる人を増やす。
 
-## ページ
+あんぜんLAB株式会社は、身近な危険に気づき、立ち止まり、適切な行動を選択するための「意識のトレーニング」を届けます。
 
-- `/` トップページ
-- `/privacy/` プライバシーポリシー
-- `/404.html` 404ページ
+## ファイル
 
-## 構成
+- `index.html`：トップページ
+- `styles.css`：共通デザイン
+- `script.js`：スマートフォンメニュー、ヘッダー表示
+- `privacy/index.html`：プライバシーポリシー
+- `404.html`：独自404ページ
+- `assets/anzen-lab-logo.png`：会社ロゴ
+- `assets/favicon.png`：ブラウザタブ用アイコン
+- `firebase.json`：Firebase Hosting設定
 
-- `index.html`
-- `styles.css`
-- `script.js`
-- `privacy/index.html`
-- `404.html`
-- `firebase.json`
+## 確認方法
 
-## ローカル確認
+`index.html` をブラウザで開いて確認します。リンクや404を含めて確認する場合は、ローカルWebサーバーを利用します。
 
-VS Codeなどの簡易サーバー、またはFirebase CLIで確認します。
+## 公開
 
-```bash
-firebase serve
+```powershell
+firebase deploy --only hosting:company
 ```
-
-## Firebase Hosting
-
-新しいHostingサイトIDとデプロイターゲットを決定した後、`.firebaserc` を追加してデプロイします。
-
-## 現在掲載していない情報
-
-- 代表者名
-- 所在地
-- 設立年月
-- 有料サービス
-- 法人向けサービス
-- 導入実績・取引実績

@@ -1,18 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0c2635">
   <title>ページが見つかりません｜あんぜんLAB株式会社</title>
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
   <link rel="stylesheet" href="/styles.css">
+  <style>
+    .not-found { min-height: 100svh; display: grid; place-items: center; padding: 40px 0; background: var(--ink); color: #fff; }
+    .not-found-inner { text-align: center; }
+    .not-found strong { display:block; color: var(--cyan); font-size: clamp(6rem, 22vw, 14rem); line-height: .9; letter-spacing: -.08em; }
+    .not-found h1 { font-size: clamp(1.8rem, 5vw, 3rem); }
+    .not-found p { color: rgba(255,255,255,.68); }
+  </style>
 </head>
 <body>
-  <main class="hero">
-    <div class="container hero-inner center">
-      <p class="section-label">404</p>
-      <h1>ページが見つかりません</h1>
-      <p class="hero-copy">URLが変更されたか、ページが削除された可能性があります。</p>
-      <a class="primary-button" href="/">トップページへ戻る</a>
+  <main class="not-found">
+    <div class="shell not-found-inner">
+      <strong>404</strong>
+      <h1>ページが見つかりません。</h1>
+      <p>URLが変更されたか、入力したアドレスが正しくない可能性があります。</p>
+      <a class="button button-light" href="/">トップページへ戻る</a>
     </div>
   </main>
 </body>
