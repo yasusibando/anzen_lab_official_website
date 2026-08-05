@@ -125,8 +125,22 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .button-light { background: #fff; color: var(--ink); }
 .text-link { font-weight: 800; text-decoration: none; border-bottom: 1px solid var(--ink); padding-bottom: 3px; }
 
-.hero-visual { position: relative; display: grid; place-items: center; min-height: 520px; }
+
+.hero-visual { position: relative; display: grid; place-items: center; min-height: 560px; }
+.orbit-figure {
+  margin: 0;
+  width: min(520px, 100%);
+  display: grid;
+  place-items: center;
+}
+.orbit-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 18px 34px rgba(12,38,53,.06));
+}
 .orbit {
+
   position: relative; width: min(440px, 100%); aspect-ratio: 1;
   border: 1px solid rgba(12,38,53,.16); border-radius: 50%;
 }
@@ -270,6 +284,9 @@ blockquote span { display: block; margin-bottom: 7px; color: var(--ink-soft); fo
 
 @media (max-width: 900px) {
   :root { --shell: min(100% - 36px, 720px); }
+  .hero-grid {
+    justify-items: center;
+  }
   .header-inner { min-height: 76px; }
   .brand { width: 205px; }
   .menu-button {
@@ -294,8 +311,8 @@ blockquote span { display: block; margin-bottom: 7px; color: var(--ink-soft); fo
   .nav-cta { text-align: center; margin-top: 8px; }
   .hero { padding-top: 116px; }
   .hero-grid { grid-template-columns: 1fr; min-height: auto; gap: 36px; }
-  .hero-visual { min-height: 400px; }
-  .orbit { width: min(380px, 82vw); }
+  .hero-visual { min-height: 430px; width: 100%; }
+  .orbit-figure { width: min(430px, 92vw); }
   .visual-caption { right: 8%; }
   .philosophy-grid, .company-grid, .work-grid { grid-template-columns: 1fr; gap: 42px; }
   .training-flow { grid-template-columns: 1fr 1fr; }
@@ -314,9 +331,8 @@ blockquote span { display: block; margin-bottom: 7px; color: var(--ink-soft); fo
   .hero-line { display: inline; }
   .hero-line::after { content: " "; }
   .hero-actions { align-items: flex-start; flex-direction: column; }
-  .hero-visual { min-height: 330px; }
-  .orbit { width: min(310px, 88vw); }
-  .shape-a, .shape-b, .shape-c, .shape-d, .shape-e { transform: scale(.82); }
+  .hero-visual { min-height: 390px; width: 100%; }
+  .orbit-figure { width: min(410px, 96vw); }
   .section { padding: 88px 0; }
   .section-heading h2, .work-card h2, .series-band h2, .contact h2 { font-size: 2.35rem; }
   .training-flow { grid-template-columns: 1fr; }
@@ -326,6 +342,15 @@ blockquote span { display: block; margin-bottom: 7px; color: var(--ink-soft); fo
   .work-card { padding: 34px 24px; }
   .company-list div { grid-template-columns: 1fr; gap: 5px; }
   .footer-top, .footer-bottom { align-items: flex-start; flex-direction: column; }
+}
+
+@media (max-width: 560px) {
+  .orbit-image {
+    width: 100%;
+  }
+  .hero-actions {
+    width: 100%;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -670,6 +695,9 @@ blockquote span { display: block; margin-bottom: 7px; color: var(--ink-soft); fo
   }
   .hero-visual {
     padding-bottom: 4px;
+  }
+  .orbit-figure {
+    width: min(430px, 96vw);
   }
 }
 
