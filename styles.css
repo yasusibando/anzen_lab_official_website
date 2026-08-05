@@ -716,3 +716,29 @@ blockquote span { display: block; margin-bottom: 7px; color: var(--ink-soft); fo
     letter-spacing: .12em;
   }
 }
+
+
+/* Company section: remove large duplicate company-name heading */
+.company-grid {
+  display: block;
+}
+
+.company-content {
+  width: min(760px, 100%);
+  margin-left: auto;
+}
+
+.company-content .section-index {
+  margin-bottom: 18px;
+}
+
+.company-content .company-list {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .company-content {
+    width: 100%;
+    margin-left: 0;
+  }
+}
