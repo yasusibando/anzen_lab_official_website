@@ -42,3 +42,18 @@ firebase deploy --only hosting:company
 - Android / Chrome 用 192x192・512x512 アイコンを追加
 - iPhone / iPad 用 `apple-touch-icon.png`（180x180）を追加
 - ブラウザから「ホーム画面に追加」した際に「あんぜんLAB」アイコンを表示
+
+
+## ブックマーク用favicon最適化
+
+Windows / Chromeなどの小さいブックマーク表示で会社ロゴが小さく見えないよう、
+会社アイコンの各図形を中央寄りに再配置したfavicon専用データを追加しました。
+
+- `assets/favicon.ico`
+- `assets/favicon-16.png`
+- `assets/favicon-32.png`
+- `assets/favicon-48.png`
+- `assets/favicon-64.png`
+- `assets/favicon-compact-512.png`
+
+スマホのホーム画面用192px / 512pxアイコンは従来設定を維持しています。
