@@ -1,0 +1,25 @@
+{
+  "id": "/",
+  "name": "あんぜんLAB株式会社",
+  "short_name": "あんぜんLAB",
+  "description": "事故が起きる前に、安全な行動を選べる人を育てる。あんぜんLAB株式会社公式ホームページ。",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f7fbfa",
+  "theme_color": "#0c2635",
+  "icons": [
+    {
+      "src": "assets/anzen-lab-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/anzen-lab-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

@@ -34,3 +34,11 @@ firebase deploy --only hosting:company
 
 - ヒヤットシリーズの対象表現を「日常生活や職場」に更新
 - ヒーロー右側のオービット画像背景を透過化した状態を維持
+
+
+## ホーム画面アイコン対応
+
+- `manifest.webmanifest` を追加
+- Android / Chrome 用 192x192・512x512 アイコンを追加
+- iPhone / iPad 用 `apple-touch-icon.png`（180x180）を追加
+- ブラウザから「ホーム画面に追加」した際に「あんぜんLAB」アイコンを表示
