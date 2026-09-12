@@ -88,3 +88,47 @@ Windows / Chromeなどの小さいブックマーク表示で会社ロゴが小�
 - 各項目を番号＋見出し＋短い説明だけに整理
 - Instagram導線も大きなボタンからテキストリンクへ変更
 - スマートフォンでの縦方向の占有を縮小
+
+
+## v22 PhotoIt専用プライバシーポリシー
+
+新規URL:
+`/photoit/privacy/`
+
+追加ファイル:
+- `photoit/privacy/index.html`
+- `photoit/privacy/privacy.css`
+- `photoit/privacy/privacy.js`
+
+仕様:
+- 日本語 / English の1ページ切替
+- 初回表示はブラウザ言語を参考に、日本語環境は日本語、それ以外は英語
+- 言語切替にCookieやlocalStorageは使用しない
+- あんぜんLAB公式ホームページのデザインに合わせたレスポンシブ構成
+- App Store / Google Playから公開URLとして参照できるログイン不要ページ
+
+
+## v23 PhotoIt専用プライバシーポリシー導線追加
+
+トップページから `photoit/privacy/` へ遷移できるよう、以下を追加しました。
+
+- お問い合わせセクションに「PhotoIt専用プライバシーポリシーを見る」リンク
+- フッターに「PhotoIt プライバシーポリシー」リンク
+
+
+## v24 PhotoItプライバシーポリシー導線調整
+
+- お問い合わせ欄の「PhotoIt専用プライバシーポリシーを見る」を削除
+- フッターの「PhotoIt プライバシーポリシー」リンクはそのまま維持
+
+
+## v25 PhotoItプライバシーポリシー ローカルリンク修正
+
+トップページのPhotoItプライバシーポリシーリンクを
+`photoit/privacy/` から `photoit/privacy/index.html` に変更しました。
+
+これにより、
+- Windowsで `index.html` を直接開くローカル確認（file://）
+- Firebase Hosting公開後
+
+の両方で、正しくPhotoIt専用プライバシーポリシーページを開けます。

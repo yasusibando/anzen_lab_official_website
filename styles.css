@@ -981,3 +981,20 @@ blockquote span { display: block; margin-bottom: 7px; color: var(--ink-soft); fo
     line-height: 1.75;
   }
 }
+
+
+/* PhotoIt privacy link on top page */
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+
+
+@media (max-width: 640px) {
+  .contact-links {
+    width: 100%;
+  }
+}
