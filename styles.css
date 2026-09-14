@@ -998,3 +998,156 @@ blockquote span { display: block; margin-bottom: 7px; color: var(--ink-soft); fo
     width: 100%;
   }
 }
+
+
+/* PhotoIt section v26 */
+.photoit-section {
+  background: #fff;
+}
+
+.photoit-heading {
+  max-width: 860px;
+}
+
+.photoit-brand-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+}
+
+.photoit-brand-icon {
+  width: 84px;
+  height: 84px;
+  border-radius: 22px;
+  flex: 0 0 auto;
+}
+
+.photoit-brand-logo {
+  width: min(420px, 100%);
+  height: auto;
+}
+
+.photoit-heading h2 {
+  margin-bottom: 20px;
+}
+
+.photoit-heading > p {
+  max-width: 740px;
+  color: var(--ink-soft);
+}
+
+.photoit-status-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.photoit-status {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(16,166,184,.18);
+  background: rgba(16,166,184,.08);
+  color: var(--ink);
+  font-size: .84rem;
+  font-weight: 800;
+}
+
+.photoit-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-top: 44px;
+}
+
+.photoit-card {
+  margin: 0;
+}
+
+.photoit-card figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 14px;
+}
+
+.photoit-card-label {
+  color: var(--aqua);
+  font-size: .76rem;
+  font-weight: 900;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.photoit-card figcaption strong {
+  font-size: 1.18rem;
+  line-height: 1.4;
+}
+
+.photoit-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.photoit-note {
+  margin: 14px 0 0;
+  color: var(--ink-soft);
+  font-size: .92rem;
+}
+
+@media (max-width: 900px) {
+  .photoit-brand-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 20px;
+  }
+
+  .photoit-gallery {
+    gap: 22px;
+  }
+}
+
+@media (max-width: 700px) {
+  .photoit-brand-row {
+    gap: 14px;
+    margin-bottom: 18px;
+  }
+
+  .photoit-brand-logo {
+    width: min(320px, 100%);
+  }
+
+  .photoit-gallery {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 34px;
+  }
+}
+
+@media (max-width: 560px) {
+  .photoit-brand-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+  }
+
+  .photoit-brand-logo {
+    width: min(250px, 100%);
+  }
+
+  .photoit-card figcaption strong {
+    font-size: 1.05rem;
+  }
+
+  .photoit-note {
+    font-size: .88rem;
+  }
+}

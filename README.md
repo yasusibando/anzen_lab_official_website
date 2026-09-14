@@ -132,3 +132,13 @@ Windows / Chromeなどの小さいブックマーク表示で会社ロゴが小�
 - Firebase Hosting公開後
 
 の両方で、正しくPhotoIt専用プライバシーポリシーページを開けます。
+
+
+## v26 PhotoIt紹介セクション追加
+
+- トップページに PhotoIt 紹介セクションを追加
+- セクション順序：03 取り組み → 04 PhotoIt → 05 安全動画 → 06 会社情報
+- PhotoIt のアプリアイコンとロゴを掲載
+- Before / After の実例画像を掲載
+- App Store / Google Play 審査中の表示を追加
+- ヘッダーとフッターに PhotoIt セクションへのリンクを追加
