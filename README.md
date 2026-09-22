@@ -142,3 +142,23 @@ Windows / Chromeなどの小さいブックマーク表示で会社ロゴが小�
 - Before / After の実例画像を掲載
 - App Store / Google Play 審査中の表示を追加
 - ヘッダーとフッターに PhotoIt セクションへのリンクを追加
+
+
+## v29 PhotoItストア公開対応
+
+PhotoItのストア公開に合わせて、トップページの「審査中」表示を正式ストアリンクへ変更しました。
+
+- App Store: https://apps.apple.com/jp/app/photoit/id6811598577
+- Google Play: https://play.google.com/store/apps/details?id=com.safetylab.photoitv2&hl=ja
+- 表示文言を「App Storeで見る」「Google Playで見る」へ変更
+- 既存のPhotoIt紹介レイアウト・画像・本文は維持
+
+
+## v30 PhotoItストアボタン画像差し替え
+
+PhotoIt紹介セクションのストアリンクを、テキストボタンから公式バッジ画像へ変更しました。
+
+- App Storeボタン → 提供SVGバッジへ差し替え
+- Google Playボタン → 提供PNGバッジへ差し替え
+- リンク先は既存の正式ストアURLを維持
+- PC/スマホともに高さを揃えて表示

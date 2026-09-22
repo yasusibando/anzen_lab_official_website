@@ -1041,21 +1041,37 @@ blockquote span { display: block; margin-bottom: 7px; color: var(--ink-soft); fo
 .photoit-status-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 14px;
   margin-top: 18px;
+  align-items: center;
 }
 
-.photoit-status {
+.photoit-store-link {
   display: inline-flex;
   align-items: center;
-  min-height: 36px;
-  padding: 0 14px;
-  border-radius: 999px;
-  border: 1px solid rgba(16,166,184,.18);
-  background: rgba(16,166,184,.08);
-  color: var(--ink);
-  font-size: .84rem;
-  font-weight: 800;
+  line-height: 0;
+  text-decoration: none;
+  transition: transform .2s ease, opacity .2s ease;
+}
+
+.photoit-store-link:hover,
+.photoit-store-link:focus-visible {
+  transform: translateY(-1px);
+  opacity: .94;
+}
+
+.photoit-store-badge {
+  display: block;
+  width: auto;
+  height: 46px;
+}
+
+.photoit-store-badge-appstore {
+  height: 46px;
+}
+
+.photoit-store-badge-googleplay {
+  height: 46px;
 }
 
 .photoit-gallery {
@@ -1149,5 +1165,14 @@ blockquote span { display: block; margin-bottom: 7px; color: var(--ink-soft); fo
 
   .photoit-note {
     font-size: .88rem;
+  }
+}
+
+
+@media (max-width: 640px) {
+  .photoit-store-badge,
+  .photoit-store-badge-appstore,
+  .photoit-store-badge-googleplay {
+    height: 42px;
   }
 }
