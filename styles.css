@@ -1176,3 +1176,191 @@ blockquote span { display: block; margin-bottom: 7px; color: var(--ink-soft); fo
     height: 42px;
   }
 }
+
+/* Hiyat section v35 */
+.hiyat-section {
+  background: #f7faf9;
+}
+
+.hiyat-card {
+  display: grid;
+  grid-template-columns: minmax(280px, .82fr) minmax(0, 1.18fr);
+  gap: 54px;
+  align-items: center;
+  padding: 48px;
+  border: 1px solid rgba(12, 38, 53, .10);
+  border-radius: 30px;
+  background:
+    radial-gradient(circle at 92% 12%, rgba(244,173,52,.10), transparent 28%),
+    #fffdf8;
+  box-shadow: 0 18px 50px rgba(12,38,53,.06);
+}
+
+.hiyat-brand {
+  padding-right: 42px;
+  border-right: 1px solid rgba(12,38,53,.16);
+}
+
+.hiyat-logo-lockup {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-top: 26px;
+}
+
+.hiyat-app-icon {
+  width: 132px;
+  height: 132px;
+  object-fit: cover;
+  border-radius: 28px;
+  flex: 0 0 auto;
+  box-shadow: 0 12px 30px rgba(12,38,53,.12);
+}
+
+.hiyat-wordmark {
+  color: #121212;
+  font-size: clamp(3rem, 5vw, 5.2rem);
+  line-height: .95;
+  letter-spacing: -.055em;
+  font-weight: 900;
+}
+
+.hiyat-content h2 {
+  margin: 0 0 20px;
+  color: var(--ink);
+  font-size: clamp(2rem, 3.4vw, 3.35rem);
+  line-height: 1.2;
+  letter-spacing: -.04em;
+}
+
+.hiyat-content > p {
+  max-width: 720px;
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.hiyat-flow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.hiyat-flow-step {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 16px;
+  border-radius: 999px;
+  color: var(--ink);
+  font-size: .9rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.hiyat-flow-photoit {
+  background: rgba(83,208,216,.22);
+}
+
+.hiyat-flow-share {
+  background: rgba(255,218,92,.46);
+}
+
+.hiyat-flow-training {
+  background: rgba(121,214,95,.24);
+}
+
+.hiyat-flow-arrow {
+  color: var(--ink-soft);
+  font-weight: 900;
+}
+
+.hiyat-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  margin-top: 30px;
+  padding: 0 22px;
+  border-radius: 999px;
+  background: #7f888e;
+  color: #fff;
+  font-size: .9rem;
+  font-weight: 800;
+  letter-spacing: .04em;
+}
+
+@media (max-width: 900px) {
+  .hiyat-card {
+    grid-template-columns: 1fr;
+    gap: 34px;
+    padding: 36px;
+  }
+
+  .hiyat-brand {
+    padding-right: 0;
+    padding-bottom: 30px;
+    border-right: 0;
+    border-bottom: 1px solid rgba(12,38,53,.16);
+  }
+
+  .hiyat-logo-lockup {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 560px) {
+  .hiyat-card {
+    padding: 26px 20px;
+    border-radius: 24px;
+  }
+
+  .hiyat-app-icon {
+    width: 88px;
+    height: 88px;
+    border-radius: 20px;
+  }
+
+  .hiyat-wordmark {
+    font-size: 3.25rem;
+  }
+
+  .hiyat-content h2 {
+    font-size: 2rem;
+  }
+
+  .hiyat-flow {
+    gap: 8px;
+  }
+
+  .hiyat-flow-step {
+    min-height: 36px;
+    padding: 0 12px;
+    font-size: .82rem;
+  }
+
+  .hiyat-flow-arrow {
+    font-size: .86rem;
+  }
+}
+/* Hiyat mobile flow single-line fix v36 */
+@media (max-width: 560px) {
+  .hiyat-flow {
+    flex-wrap: nowrap;
+    gap: clamp(3px, 1vw, 6px);
+  }
+
+  .hiyat-flow-step {
+    min-height: 34px;
+    padding: 0 clamp(7px, 1.8vw, 10px);
+    font-size: clamp(.62rem, 2.35vw, .76rem);
+    letter-spacing: -.02em;
+    white-space: nowrap;
+  }
+
+  .hiyat-flow-arrow {
+    flex: 0 0 auto;
+    font-size: .72rem;
+  }
+}
